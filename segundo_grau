@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+
+float main ()
+{
+    float A, B, C, X1, X2, Delta;
+
+    printf("escreva o valor de A: ");
+    scanf("%f", &A);
+
+    printf("escreva o valor de B: ");
+    scanf("%f", &B);
+
+    printf("escreva o valor de C: ");
+    scanf("%f", &C);
+
+    Delta = pow(B, 2) - 4*A*C;
+
+    printf("o valor de delta e de: %f \n", Delta);
+
+    X1 = (-pow(B, 2) + sqrt(Delta))/2;
+
+    printf("o valor de X1 e de: %f \n", X1);
+
+    X2 = (-pow(B, 2) - sqrt(Delta))/2;
+
+     printf("o valor de X2 e de: %f \n", X2);
+
+}
